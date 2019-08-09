@@ -1,0 +1,275 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css?family=Dosis|Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+
+$primary: white; // white
+$dosis: 'Dosis', sans-serif;
+$lora: 'Lora', serif;
+//font-family: 'Montserrat', sans-serif; BODY
+
+body {
+  margin: 0;
+  padding: 0;
+}
+/* div {
+  border: red solid 1px;
+} */
+
+.App {
+  text-align: center;
+
+  .App-header {
+    background-color: $primary;
+    padding: 40px 40px 30px 40px;
+    color: white;
+
+    a {
+      color: #666666;
+      padding: 0 50px;
+      font-size: 20px;
+      letter-spacing: 1px;
+      font-weight: 500;
+      line-height: 14px;
+      font-stretch: normal;
+      font-style: normal;
+      text-decoration: unset;
+    }
+
+    a.active {
+      font-weight: bold;
+    }
+  }
+
+  .App-intro {
+    font-size: large;
+  }
+}
+
+.Home {
+  p {
+    font-size: 1.2em;
+  }
+}
+
+.portoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1140px; // MEDIA QUERY HERE
+}
+
+.contctContainer {
+  h2 {
+    font-family: $dosis;
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+  p {
+    font-style: italic;
+    font-family: $lora;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0px;
+  }
+}
+
+.formContainer {
+  input {
+    margin: 2px;
+    background-color: #f4f9f8;
+    height: 40px;
+    border-width: 0px;
+    color: #666666;
+    &:valid {
+      background-color: #f4f9f8 !important;
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 557px;
+  }
+  textarea {
+    margin: 0px 0px 20px;
+    width: 557px;
+    height: 258px;
+    background-color: #f4f9f8;
+    border-width: 0px;
+    color: #666666;
+
+    margin-bottom: 20px !important;
+  }
+
+  button {
+    background-color: black !important;
+    width: 10vw;
+    padding: 15px 20px;
+  }
+}
+
+.card {
+  width: 30rem;
+
+  border: none;
+}
+
+.dosis {
+  font-family: $dosis;
+}
+
+#portHeader {
+  margin: 10vh;
+  font-size: 55px;
+  line-height: 70px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+#imgLogo {
+  width: 180px;
+}
+#navLine {
+  border-bottom: 1px solid #efefef;
+  margin-top: 30px;
+  display: block;
+}
+
+.picsAndAgeContainer {
+  display: flex;
+}
+
+.picsContainer {
+  width: 45%;
+  margin-left: 250px;
+
+  h3 {
+    margin-top: -70px;
+    padding-left: 35px;
+    text-align: left;
+    font-family: $dosis;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #222222;
+  }
+  img {
+    height: 250px;
+    padding: 10px;
+  }
+}
+
+.ageContainer {
+  h3 {
+    margin-top: -70px;
+    padding-left: 50px;
+    text-align: left;
+    font-family: $dosis;
+    font-size: 30px;
+    line-height: 32px;
+    letter-spacing: 2px;
+    color: #222222;
+  }
+  h5 {
+    margin-top: -100px;
+    margin-right: 200px;
+    font-family: $dosis;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 0px;
+    color: black;
+  }
+}
+
+#age {
+  margin-left: 50px;
+  margin-top: -50px;
+  font-size: 25rem;
+  font-family: $lora;
+  width: 20vw;
+}
+
+.dash {
+  height: 1px;
+  width: 35px;
+  background: #dddddd;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 30px;
+}
+
+#square {
+  transform: rotate(45deg);
+  display: inline-block;
+}
+
+.introContainer {
+  background-image: url('./img/steph_nature.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  color: white;
+  height: 75vh;
+  margin-bottom: 100px;
+
+  h1 {
+    padding-top: 100px;
+    letter-spacing: 2px;
+    font-size: 42px;
+    line-height: 65px;
+  }
+  h4 {
+    padding-top: 50px;
+    font-family: $lora;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    font-style: italic;
+  }
+  button {
+    background-color: transparent;
+    color: white;
+    padding: 15px 20px;
+  }
+  p {
+    padding-top: 25px;
+    font-family: $lora;
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: 0;
+  }
+  button {
+    margin-top: 50px;
+    font-family: $dosis;
+    border-width: 2px;
+    border-color: white;
+    &:hover {
+      transition: background-color 0.5s ease;
+      background-color: white;
+      color: #222222;
+    }
+  }
+}
+
+.intoText {
+  width: 35vw;
+  margin-left: 250px;
+  text-align: left;
+}
+
+/* 
+.stephLogo {
+  color: #666666;
+  letter-spacing: 6px;
+}
+.top {
+  margin-top: -25px;
+  letter-spacing: 7px;
+}
+
+
+<br />
+        <br />
+        <h2 className="dosis stephLogo">STEPHANE</h2> {<br />}
+        <h3 className="dosis stephLogo top">HOUDAYER</h3>
+        <br />
+        <br /> */
